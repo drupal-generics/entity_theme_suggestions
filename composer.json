@@ -1,8 +1,7 @@
 {
     "name": "drupal-generics/entity_theme_suggestions",
     "description": "Provides theme suggestions plugin for all type of entities.",
-    "type": "drupal-generics",
-    "require": {
-        "composer/installers": "^1.2"
-    }
+    "type": "drupal-module",
+    "license": "GPL-2.0+",
+    "require": {}
 }
