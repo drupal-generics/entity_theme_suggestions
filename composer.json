@@ -1,0 +1,6 @@
+{
+    "name": "drupal-generics/entity_theme_suggestions",
+    "description": "Provides theme suggestions plugin for all type of entities.",
+    "type": "project",
+    "require": {}
+}
