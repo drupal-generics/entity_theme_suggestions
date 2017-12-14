@@ -2,7 +2,7 @@
 This module provides a plugin which can define new theme suggestions for 
 entities. It replaces hook_theme_suggetions_alter(). The module provides a base 
 suggestions class, "EntityThemeSuggestionsBase", that can be extended by any 
-plugin, so that it inherits the most common theme suggestions. 
+plugin so that it inherits the most common theme suggestions. 
 
 ## Usage
 Create a class in "Plugin/ThemeSuggestions" directory structure of your module, 
@@ -10,7 +10,7 @@ that implements "EntityThemeSuggestionsInterface" interface. The
 "alterSuggestions" function should return all the theme suggestions for your 
 entity. 
 
-To mark your class as an entity theme suggestions pluggin, you have to add an 
+To mark your class as an entity theme suggestions plugin, you have to add an 
 annotation: 
 ```php
 /**
@@ -47,7 +47,7 @@ class UserThemeSuggestions extends EntityThemeSuggestionsBase {
 
 This code creates the provided default suggestions from the module for the user
  entity. The suggestions are defined in the base class by the 
-"alterSuggestions()" method. The method priovides the following suggestions:
+"alterSuggestions()" method. The method provides the following suggestions:
 
   - [entity_type_id]
   - [entity_type_id]--[view_mode]
