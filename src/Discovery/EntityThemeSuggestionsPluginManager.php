@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\entity_theme_suggestions;
+namespace Drupal\entity_theme_suggestions\Discovery;
 
 use Drupal\Core\Cache\CacheBackendInterface;
 use Drupal\Core\Extension\ModuleHandlerInterface;
@@ -17,7 +17,7 @@ class EntityThemeSuggestionsPluginManager extends DefaultPluginManager {
    * {@inheritdoc}
    */
   public function __construct(\Traversable $namespaces, CacheBackendInterface $cache_backend, ModuleHandlerInterface $module_handler) {
-    parent::__construct('Plugin/ThemeSuggestions', $namespaces, $module_handler, 'Drupal\entity_theme_suggestions\EntityThemeSuggestionsInterface', 'Drupal\entity_theme_suggestions\Annotation\EntityThemeSuggestions');
+    parent::__construct('Plugin/ThemeSuggestions', $namespaces, $module_handler, 'Drupal\entity_theme_suggestions\Plugin\Definition\EntityThemeSuggestionsInterface', 'Drupal\entity_theme_suggestions\Annotation\EntityThemeSuggestions');
     $this->setCacheBackend($cache_backend, 'entity_theme_suggestions');
   }
 

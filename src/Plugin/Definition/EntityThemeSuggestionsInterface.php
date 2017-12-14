@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\entity_theme_suggestions;
+namespace Drupal\entity_theme_suggestions\Plugin\Definition;
 
 /**
  * Interface for entity theme suggestions.
