@@ -32,9 +32,6 @@ class EntityThemeSuggestionsPluginManager extends DefaultPluginManager {
    */
   public function getPlugins($entity_type) {
     $suggestions = [];
-    if ($entity_type != 'user') {
-      return [];
-    }
     // Get the alter definitions for the given bundle.
     foreach ($this->getDefinitions() as $id => $definition) {
       if (!empty($definition['entityType']) && $definition['entityType'] == $entity_type) {

@@ -1,0 +1,5 @@
+name: 'Entity theme suggestions test'
+type: module
+description: 'Support module for the entity_theme_suggestions module tests.'
+package: Testing
+core: 8.x

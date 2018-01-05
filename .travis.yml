@@ -7,6 +7,7 @@ php:
 env:
   global:
     - MODULE_NAME='entity_theme_suggestions'
+    - MODULE_TEST_GROUP='entity_theme_suggestions'
     - DRUPAL_VERSION='^8.4.0'
 
 cache:

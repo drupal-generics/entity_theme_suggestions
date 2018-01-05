@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Contains hook implementations.
+ */
+
+/**
+ * {@inheritdoc}
+ */
+function entity_theme_suggestions_test_theme($existing, $type, $theme, $path) {
+  return [
+    'node_test_theme' => [
+      'variables' => [
+        'content' => NULL,
+      ],
+    ],
+  ];
+}
